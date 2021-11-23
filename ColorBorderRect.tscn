@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ColorBorderRect.gd" type="Script" id=1]
+
+[node name="ColorBorderRect" type="AspectRatioContainer"]
+margin_right = 100.0
+margin_bottom = 100.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Color" type="ColorRect" parent="."]
+margin_right = 100.0
+margin_bottom = 100.0
+rect_pivot_offset = Vector2( -320, 86 )
+size_flags_horizontal = 3
+size_flags_vertical = 3
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Border" type="ReferenceRect" parent="."]
+margin_right = 100.0
+margin_bottom = 100.0
+border_color = Color( 0, 0, 0, 1 )
+border_width = 2.0
+editor_only = false
